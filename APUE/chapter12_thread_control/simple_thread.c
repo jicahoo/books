@@ -1,17 +1,26 @@
 #include <pthread.h>
 #include <stdio.h>
+#include <sys/syscall.h>
 
 //gcc -pthread simple_thread.c  -o simple.exe
 
 // At beginning, I didn't add *.
 void *inc_x(void *x_void_ptr)
 {
+#ifdef SYS_gettid
+        pid_t tid = syscall(SYS_gettid);
+#else
+#error "SYS_gettid unavailable on this system"
+#endif
+    printf("tid: %d\n", tid);
+    printf("inc_x pid: %d\n", getpid());
     int *x_ptr = (int *)x_void_ptr;
     while(++(*x_ptr) < 100);
     printf("x increment finished\n");
 }
 int main() 
 {
+    printf("main pid: %d\n", getpid());
     int x=0, y=0;
     printf("x: %d, y: %d\n", x, y);
     pthread_t inc_x_thread;
