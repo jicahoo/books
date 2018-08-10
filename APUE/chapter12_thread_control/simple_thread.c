@@ -4,6 +4,7 @@
 
 //gcc -pthread simple_thread.c  -o simple.exe
 
+
 // At beginning, I didn't add *.
 void *inc_x(void *x_void_ptr)
 {
@@ -12,7 +13,9 @@ void *inc_x(void *x_void_ptr)
 #else
 #error "SYS_gettid unavailable on this system"
 #endif
-    printf("tid: %d\n", tid);
+    printf("tid LWP kernel id: %d\n", tid);
+    //On Linux, pthread_t is defined a unisnged integer.
+    printf("%x\n", (unsigned long int)(pthread_self()));
     printf("inc_x pid: %d\n", getpid());
     int *x_ptr = (int *)x_void_ptr;
     while(++(*x_ptr) < 100);
