@@ -6,3 +6,4 @@
 * 不要浪费已有的努力，vert.x, 微服务，继续，成型。
 * C语言开发的著名软件：
   * Nginx。 和Netty类似。
+* C Semaphore example: http://pages.cs.wisc.edu/~remzi/Classes/537/Fall2008/Notes/threads-semaphores.txt
