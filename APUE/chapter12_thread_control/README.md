@@ -8,4 +8,4 @@
   * Nginx。 和Netty类似。
 * C Semaphore example: http://pages.cs.wisc.edu/~remzi/Classes/537/Fall2008/Notes/threads-semaphores.txt
 * 使用system call构造出Linux上的线程：https://nullprogram.com/blog/2015/05/15/  Raw Linux Threads via System Calls
-* APUE-12.6 线程私有数据，有些情况下，还是需要线程私有数据，譬如说errno. 如何实现的线程成私有数据？数据存在何处？
+* APUE-12.6 线程私有数据，有些情况下，还是需要线程私有数据，譬如说errno. 如何实现的线程成私有数据？数据存在何处？POSIX只是定义了接口，pthread_key_create, 可能有各种方式实现这个接口，不同的平台可能也有不同的实现。
