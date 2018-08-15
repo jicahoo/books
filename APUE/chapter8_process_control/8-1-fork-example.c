@@ -14,16 +14,17 @@ int main() {
         //err_sys("write error");
         perror("write error\n");
     }
+    printf("before fork \n");
     if ((pid = fork()) < 0 ) {
         //err_sys("fork error");
         perror("fork error!\n");
     } else if( pid == 0 ) {
         glob++;
         var++;
+        printf("Child pid = %d, glob = %d, var = %d \n", getpid(), glob, var);
     } else {
-        printf("parent process\n");
         sleep(2);
+        printf("Parent pid = %d, glob = %d, var = %d \n", getpid(), glob, var);
     }
-    printf("pid = %d, glob = %d, var = %d \n", getpid(), glob, var);
     exit(0);
 }
