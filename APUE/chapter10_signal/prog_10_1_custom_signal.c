@@ -18,6 +18,7 @@ int main() {
         perror("Can't register sigusr2 handler!");
     }
 
+    printf("PID: %d\n", getpid());
     printf("before pause\n");
     for ( ; ; ) {
         pause();
@@ -26,6 +27,7 @@ int main() {
 }
 
 static void sig_usr(int signo) {
+    printf("PID: %d\n", getpid());
     printf("enter sig_usr\n");
     if (signo == SIGUSR1) {
         printf("Recv SIGUSR1\n");
