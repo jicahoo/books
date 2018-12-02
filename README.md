@@ -4,5 +4,4 @@
 
 ## Operating System
 * <深入理解计算机系统>
-* ![深入理解计算机系统](https://img3.doubanio.com/view/subject/l/public/s1470003.jpg =100x20)
-* <img src="https://img3.doubanio.com/view/subject/l/public/s1470003.jpg" alt="drawing" width="200"/>
+  * <img src="https://img3.doubanio.com/view/subject/l/public/s1470003.jpg" alt="drawing" width="200"/>
