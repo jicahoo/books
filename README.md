@@ -5,37 +5,37 @@
 ## Operating System
 * <深入理解计算机系统>
   * <img src="https://img3.doubanio.com/view/subject/l/public/s1470003.jpg" alt="drawing" width="200"/>
-* Linux内核的设计与实现. 不断研究中
-* Unix环境高级编程， 不断研究中 <span style="color:blue">some *blue* text</span>.
+* <Linux内核的设计与实现>. 不断研究中
+* <Unix环境高级编程>， 不断研究中
 
 ## Java
 * Java入门:
-  * Java核心编程
-  * Java编程思想
+  * <Java核心编程>
+  * <Java编程思想>
 * Java并发:
-  * Java并发编程实践
-  * Java并发编程的艺术 (未读)
+  * <Java并发编程实践>
+  * <Java并发编程的艺术> (未读)
 * Java编程最佳实践  
-  * Effective Java
+  * <Effective Java>
 * Java虚拟机
-  * 深入理解Java虚拟机 - 周志明
+  * <深入理解Java虚拟机> - 周志明
 
 ## 计算机网络
-* TCP/IP详解(卷一)
-* 图解TCP/IP
+* <TCP/IP详解(卷一)>
+* <图解TCP/IP>
 
 ## 算法与数据结构
-* 编程珠玑
-* 算法导论
+* <编程珠玑>
+* <算法导论>
 
 ## 设计模式
-* 大话设计模式
-* 设计模式(GoF)
+* <大话设计模式>
+* <设计模式(GoF)>
 
 ## 软件设计
-* 领域驱动设计 Eric Evans(未读）
+* <领域驱动设计 Eric Evans(未读)>
 
 ## 微服务
-* 微服务设计 Sam Newman（已读）
+* <微服务设计> Sam Newman（已读）
 
   
