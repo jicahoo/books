@@ -8,11 +8,16 @@
 * Linux内核的设计与实现
 
 ## Java
-* Java并发编程实践
-* Core Java Volume 1
-* Effective Java
-* 深入理解Java虚拟机 - 周志明
-* Java编程思想
+* Java入门:
+  * Java核心编程
+  * Java编程思想
+* Java并发:
+  * Java并发编程实践
+  * Java并发编程的艺术 (未读)
+* Java编程最佳实践  
+  * Effective Java
+* Java虚拟机
+  * 深入理解Java虚拟机 - 周志明
 
 ## 计算机网络
 * TCP/IP详解(卷一)
@@ -32,4 +37,4 @@
 ## 微服务
 * 微服务设计 Sam Newman
 
-
+  
