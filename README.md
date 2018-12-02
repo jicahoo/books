@@ -32,9 +32,9 @@
 * 设计模式(GoF)
 
 ## 软件设计
-* 领域驱动设计 Eric Evans
+* 领域驱动设计 Eric Evans(未读）
 
 ## 微服务
-* 微服务设计 Sam Newman
+* 微服务设计 Sam Newman（已读）
 
   
