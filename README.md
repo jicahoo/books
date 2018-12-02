@@ -6,6 +6,7 @@
 * <深入理解计算机系统>
   * <img src="https://img3.doubanio.com/view/subject/l/public/s1470003.jpg" alt="drawing" width="200"/>
 * Linux内核的设计与实现. 不断研究中
+* Unix环境高级编程， 不断研究中
 
 ## Java
 * Java入门:
