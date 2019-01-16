@@ -6,9 +6,7 @@
     * SIGKILL(9) 是不能被进程捕获/忽略的，所以,kill -9 应该是内核层面的强制退出,直接操作进程对应的内核结构。https://bencane.com/2014/04/01/understanding-the-kill-command-and-how-to-terminate-processes-in-linux/
     * https://major.io/2010/03/18/sigterm-vs-sigkill/
     ```
-    Although SIGKILL is defined in the same signal header file as SIGTERM, it cannot be ignored by the process. In fact, the process isn’t even made aware of the SIGKILL signal since the signal goes straight to the kernel init. At that point, init will stop the process. The process never gets the opportunity to catch the signal and act on it.
-
-However, the kernel may not be able to successfully kill the process in some situations. If the process is waiting for network or disk I/O, the kernel won’t be able to stop it. Zombie processes and processes caught in an uninterruptible sleep cannot be stopped by the kernel, either. A reboot is required to clear those processes from the system.
+    Although SIGKILL is defined in the same signal header file as SIGTERM, it cannot be ignored by the process. In fact, the process isn’t even made aware of the SIGKILL signal since the signal goes straight to the kernel init. At that point, init will stop the process. The process never gets the opportunity to catch the signal and act on it. However, the kernel may not be able to successfully kill the process in some situations. If the process is waiting for network or disk I/O, the kernel won’t be able to stop it. Zombie processes and processes caught in an uninterruptible sleep cannot be stopped by the kernel, either. A reboot is required to clear those processes from the system.
     ```
     
   
