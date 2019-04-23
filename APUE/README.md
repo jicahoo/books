@@ -16,3 +16,25 @@
     ```
     
   
+* 线程栈的大小是可以控制的。Sherman在调Tomcat的VSS空间，发现几个ZMQ线程的栈各占了８MB的VSS空间。原因应该是ulimit -s设为了8MB.
+ * https://stackoverflow.com/questions/50917576/zeromq-background-thread-creation
+ * https://unix.stackexchange.com/questions/127602/default-stack-size-for-pthreads
+ * Code 输出线程栈的大小：
+  ```c
+  #include <pthread.h>
+  #include <stdio.h>
+
+  int main()
+  {
+
+      pthread_attr_t attr;
+      int stacksize;
+
+      int rc = pthread_attr_init(&attr);
+      pthread_attr_getstacksize(&attr, &stacksize);
+      printf("Thread stack size = %d bytes \n", stacksize); //Will output Thread stack size = 8388608 bytes in our system.
+
+      return 0;
+
+  }
+  ```
